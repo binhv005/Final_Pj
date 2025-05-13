@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9B447F4-3CA5-489A-89FC-710A30A74825}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BasicGroceryStore</RootNamespace>
+    <AssemblyName>BasicGroceryStore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormCustomer.Designer.cs">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormStoreInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormStoreInfomation.Designer.cs">
+      <DependentUpon>FormStoreInfomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormBill.Designer.cs">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormStaff.Designer.cs">
+      <DependentUpon>FormStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSupplier.Designer.cs">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormSupplierSynthetic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSupplierSynthetic.Designer.cs">
+      <DependentUpon>FormSupplierSynthetic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCProductItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCProductItem.Designer.cs">
+      <DependentUpon>UCProductItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCCalendar.Designer.cs">
+      <DependentUpon>UCCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCBrowser.Designer.cs">
+      <DependentUpon>UCBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCHomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCHomePage.Designer.cs">
+      <DependentUpon>UCHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCImported.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCImported.Designer.cs">
+      <DependentUpon>UCImported.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCOrdered.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCOrdered.Designer.cs">
+      <DependentUpon>UCOrdered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCProduct.Designer.cs">
+      <DependentUpon>UCProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCStaff.Designer.cs">
+      <DependentUpon>UCStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCStatistic.Designer.cs">
+      <DependentUpon>UCStatistic.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\FormCustomer.resx">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormStoreInfomation.resx">
+      <DependentUpon>FormStoreInfomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormBill.resx">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormStaff.resx">
+      <DependentUpon>FormStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSupplier.resx">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSupplierSynthetic.resx">
+      <DependentUpon>FormSupplierSynthetic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCProductItem.resx">
+      <DependentUpon>UCProductItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCCalendar.resx">
+      <DependentUpon>UCCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCBrowser.resx">
+      <DependentUpon>UCBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCHomePage.resx">
+      <DependentUpon>UCHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCImported.resx">
+      <DependentUpon>UCImported.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCOrdered.resx">
+      <DependentUpon>UCOrdered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCProduct.resx">
+      <DependentUpon>UCProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCStaff.resx">
+      <DependentUpon>UCStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCStatistic.resx">
+      <DependentUpon>UCStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_product_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_purchase_order_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_import_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_plot_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_staff_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_location_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_facebook_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Instagram_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_linkedin_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_YouTube_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_call_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Tear-Off_Calendar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_back_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hexagon_reload_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mint_browser_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_mint_browser_32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Copper.png" />
+    <Content Include="Resources\Golden.png" />
+    <Content Include="Resources\None.png" />
+    <Content Include="Resources\Platinum.png" />
+    <Content Include="Resources\Silver.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
