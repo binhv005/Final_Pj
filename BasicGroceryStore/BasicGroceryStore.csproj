@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessLayer\Config.cs" />
+    <Compile Include="DataAccessLayer\DAO_Account.cs" />
+    <Compile Include="DataAccessLayer\DAO_Bill.cs" />
+    <Compile Include="DataAccessLayer\DAO_Bill_Item.cs" />
+    <Compile Include="DataAccessLayer\DAO_Contract.cs" />
+    <Compile Include="DataAccessLayer\DAO_Customer.cs" />
     <Compile Include="Form\FormCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
