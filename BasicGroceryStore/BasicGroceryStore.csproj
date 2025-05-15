@@ -56,6 +56,9 @@
     <Compile Include="DataAccessLayer\DAO_Customer.cs" />
     <Compile Include="DataAccessLayer\DAO_Information.cs" />
     <Compile Include="DataAccessLayer\DAO_Product.cs" />
+    <Compile Include="DataAccessLayer\DAO_Staff.cs" />
+    <Compile Include="DataAccessLayer\DAO_Supplier.cs" />
+    <Compile Include="DataAccessLayer\DataProvider.cs" />
     <Compile Include="Form\FormCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
